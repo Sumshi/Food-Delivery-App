@@ -6,7 +6,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import SearchIcon from '../../assets/search_icon.png';
 import BasketIcon from '../../assets/basket_icon.png';
-import Logo from '../../assets/logo.png';
+// import Logo from '../../assets/logo.png';
+import Logo1 from '../../assets/logo1.png';
 
 const Navbar = () => {
 //state managment using useState
@@ -15,7 +16,7 @@ const [menu, setMenu] = useState("home");
 
   return (
     <div className='navbar'>
-      <img src={Logo} alt="" className='logo'/>
+      <img src={Logo1} alt="" className='logo'/>
       <ul className="navbar-menu">
         <li onClick={() =>setMenu("home")} className={menu==="home"?"active":""}>Home</li>
         <li onClick={() =>setMenu("menu")} className={menu==="menu"?"active":""}>Menu</li>
